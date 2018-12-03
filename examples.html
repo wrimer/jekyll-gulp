@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="examples">
+    <div class="container">
+        <ul class="examples__list">
+            {% for example in site.examples %}
+                <li class="example__item">
+                    <h1><a href="{{ site.baseurl }}{{ example.url }}">{{ example.name }}</a></h1>
+
+                    <p class="example__position">{{ example.descr }}</p>
+                    <img src="{{ example.preview }}" alt="preview" class="example__image">
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

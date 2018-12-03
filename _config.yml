@@ -1,0 +1,12 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+keep_files: ["main.css", "images"]
+
+
+#Collections
+collections:
+  employees:
+  examples:
+    output: true

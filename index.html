@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="employees">
+    <div class="container">
+
+        {% for item in site.data.teams %}
+            <h1>{{ item.team }}</h1>
+            <ul class="employees__list">
+                {% for position in item.positions %}
+                    {% for employee in site.employees %}
+                        {% if employee.position == position %}
+                            <li class="employees__item">
+                                <img src="images/{{ employee.photo }}" alt="Employee avatar" class="employees__image">
+                                <p class="employees__name">{{ employee.name }}</p>
+                                <p class="employees__position">{{ employee.position }}</p>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+</div>

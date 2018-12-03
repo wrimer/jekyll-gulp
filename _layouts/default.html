@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+    <link rel="stylesheet" type="text/css" href="/main.css"/>
+</head>
+
+<body>
+    <nav>
+        <a href="{{ site.baseurl }}/">Employees</a>
+        <a href="{{ site.baseurl }}/examples.html">Examples</a>
+    </nav>
+
+    <div class="container">
+        {{ content }}
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#- team: mobile
+#  - department: android
+#  - department: ios
+#- team: web
+#  - department: front
+#  - department: back
+#-
+#  - android
+#  - ios
+- team: ANDROID TEAM
+  positions:
+    - android engineer
+- team: IOS TEAM
+  positions:
+    - ios engineer
+- team: WEB TEAM
+  positions:
+    - back-end engineer
+    - frontend developer
+- team: DELIVERY TEAM
+  positions:
+    - ceo & cto
+    - project manager
+    - devops
+    - marketing manager
+    - ui/ux designer
+    - quality assurance
+
+
